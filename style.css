@@ -1,0 +1,58 @@
+.grid-container > div{
+  
+    border: 1px solid black;
+    text-align: center;
+    padding: 15px;
+    color: white;
+}
+
+.items1{ background-color: #00b894;}
+.items2{ background-color:#0984e3 ;}
+.items3{ background-color:#0984e3;}
+.items4{ background-color: #d63031;}
+.items5{ background-color: #d63031}
+.items6{ background-color: #d63031}
+.items7{ background-color: #2d3436;}
+
+
+
+
+
+
+
+
+.items1{ grid-area: header;}
+.items2{ grid-area: nav;}
+.items3{ grid-area: main;}
+.items4{ grid-area: container;}
+.items5{ grid-area: containe;}
+.items6{ grid-area: contai;}
+.items7{ grid-area: footer;}
+
+.grid-container{
+    display: grid;
+    grid-template-areas:
+    'header header header header header header header header'
+    'nav main main main main main main main'
+    
+    'nav container container containe containe contai contai contai'
+    'nav footer footer footer footer footer footer footer'
+    ;
+    gap: 10px;
+   
+}
+@media screen and (max-width: 576px) {
+    .grid-container{
+        grid-template-areas:
+        'header header header header header header header header'
+        'main main main main main main main main'
+        'nav nav nav nav nav nav nav nav'  
+        'container container container container container container container container'
+        'containe containe containe containe containe containe containe containe'
+        'contai contai contai contai contai contai contai contai'
+         'footer footer footer footer footer footer footer footer'
+        ;
+        gap: 10px;
+       
+    }
+}
